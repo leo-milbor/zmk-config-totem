@@ -1,0 +1,509 @@
+layout: {zmk_keyboard: totem}
+layers:
+  QWERTY-MAC:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - {t: S, h: LCTRL}
+  - {t: D, h: LALT}
+  - {t: F, h: LGUI}
+  - G
+  - H
+  - {t: J, h: RGUI}
+  - {t: K, h: LALT}
+  - {t: L, h: RCTRL}
+  - ;
+  - ESC
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: ACC-QW-MAC, h: sticky}
+  - {t: BSPC, h: NAV-MAC}
+  - {t: SPACE, h: NUMPAD}
+  - DEL
+  - '&td_sft'
+  - {t: RET, h: SYMBOLS}
+  - '&td_tab'
+  QWERTY:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - {t: S, h: LGUI}
+  - {t: D, h: LALT}
+  - {t: F, h: LCTRL}
+  - G
+  - H
+  - {t: J, h: RCTRL}
+  - {t: K, h: LALT}
+  - {t: L, h: RGUI}
+  - ;
+  - ESC
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: ACC-QW-LIN, h: sticky}
+  - {t: BSPC, h: NAV-LIN}
+  - {t: SPACE, h: NUMPAD}
+  - DEL
+  - '&td_sft'
+  - {t: RET, h: SYMBOLS}
+  - '&td_tab'
+  ERGOL-MAC:
+  - Q
+  - C
+  - O
+  - P
+  - W
+  - J
+  - M
+  - D
+  - {t: ACC-EL-MAC, h: sticky}
+  - Y
+  - A
+  - {t: S, h: LCTRL}
+  - {t: E, h: LALT}
+  - {t: N, h: LGUI}
+  - F
+  - L
+  - {t: R, h: RGUI}
+  - {t: T, h: LALT}
+  - {t: I, h: RCTRL}
+  - U
+  - ESC
+  - Z
+  - X
+  - '-'
+  - V
+  - B
+  - .
+  - H
+  - G
+  - ','
+  - K
+  - ''''
+  - {t: BSPC, h: NAV-MAC}
+  - {t: SPACE, h: NUMPAD}
+  - DEL
+  - '&td_sft'
+  - {t: RET, h: SYMBOLS}
+  - '&td_tab'
+  ERGOL:
+  - Q
+  - C
+  - O
+  - P
+  - W
+  - J
+  - M
+  - D
+  - {t: ACC-EL-LIN, h: sticky}
+  - Y
+  - A
+  - {t: S, h: LGUI}
+  - {t: E, h: LALT}
+  - {t: N, h: LCTRL}
+  - F
+  - L
+  - {t: R, h: RCTRL}
+  - {t: T, h: LALT}
+  - {t: I, h: RGUI}
+  - U
+  - ESC
+  - Z
+  - X
+  - '-'
+  - V
+  - B
+  - .
+  - H
+  - G
+  - ','
+  - K
+  - ''''
+  - {t: BSPC, h: NAV-LIN}
+  - {t: SPACE, h: NUMPAD}
+  - DEL
+  - '&td_sft'
+  - {t: RET, h: SYMBOLS}
+  - '&td_tab'
+  ACC-EL-LIN:
+  - {t: '&u_acirc', s: '&u_acirc_cap'}
+  - {t: '&u_ccedi', s: '&u_ccedi_cap'}
+  - {t: '&u_oelig', s: '&u_oelig_cap'}
+  - {t: '&u_ocirc', s: '&u_ocirc_cap'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - {t: '&u_ucirc', s: '&u_ucirc_cap'}
+  - {t: '&u_agrav', s: '&u_agrav_cap'}
+  - {t: '&u_eaigu', s: '&u_eaigu_cap'}
+  - {t: '&u_egrav', s: '&u_egrav_cap'}
+  - {t: '&u_ecirc', s: '&u_ecirc_cap'}
+  - ''
+  - ''
+  - ''
+  - {t: '&u_icirc', s: '&u_icirc_cap'}
+  - {t: '&u_idiae', s: '&u_idiae_cap'}
+  - {t: '&u_ugrav', s: '&u_ugrav_cap'}
+  - ''
+  - ''
+  - '&u_lguil'
+  - '&u_rguil'
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&u_micro'
+  - ''
+  - ''
+  - {t: '&u_aelig', s: '&u_aelig_cap'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  ACC-EL-MAC:
+  - {t: '&m_acirc', s: '&m_acirc_cap'}
+  - {t: '&m_ccedi', s: '&m_ccedi_cap'}
+  - {t: '&m_oelig', s: '&m_oelig_cap'}
+  - {t: '&m_ocirc', s: '&m_ocirc_cap'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - {t: '&m_ucirc', s: '&m_ucirc_cap'}
+  - {t: '&m_agrav', s: '&m_agrav_cap'}
+  - {t: '&m_eaigu', s: '&m_eaigu_cap'}
+  - {t: '&m_egrav', s: '&m_egrav_cap'}
+  - {t: '&m_ecirc', s: '&m_ecirc_cap'}
+  - ''
+  - ''
+  - ''
+  - {t: '&m_icirc', s: '&m_icirc_cap'}
+  - {t: '&m_idiae', s: '&m_idiae_cap'}
+  - {t: '&m_ugrav', s: '&m_ugrav_cap'}
+  - ''
+  - ''
+  - Alt+\
+  - Alt+Sft+\
+  - ''
+  - ''
+  - ''
+  - ''
+  - Alt+M
+  - ''
+  - ''
+  - {t: '&m_aelig', s: '&m_aelig_cap'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  ACC-QW-LIN:
+  - {t: '&u_acirc', s: '&u_acirc_cap'}
+  - {t: '&u_egrav', s: '&u_egrav_cap'}
+  - {t: '&u_eaigu', s: '&u_eaigu_cap'}
+  - {t: '&u_ecirc', s: '&u_ecirc_cap'}
+  - {t: '&u_ediae', s: '&u_ediae_cap'}
+  - {t: '&u_ucirc', s: '&u_ucirc_cap'}
+  - {t: '&u_ugrav', s: '&u_ugrav_cap'}
+  - {t: '&u_icirc', s: '&u_icirc_cap'}
+  - {t: '&u_ocirc', s: '&u_ocirc_cap'}
+  - {t: '&u_oelig', s: '&u_oelig_cap'}
+  - {t: '&u_agrav', s: '&u_agrav_cap'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: '&u_idiae', s: '&u_idiae_cap'}
+  - ''
+  - {t: '&u_aelig', s: '&u_aelig_cap'}
+  - ''
+  - '&u_lguil'
+  - '&u_rguil'
+  - {t: '&u_ccedi', s: '&u_ccedi_cap'}
+  - ''
+  - ''
+  - ''
+  - '&u_micro'
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  ACC-QW-MAC:
+  - {t: '&m_acirc', s: '&m_acirc_cap'}
+  - {t: '&m_egrav', s: '&m_egrav_cap'}
+  - {t: '&m_eaigu', s: '&m_eaigu_cap'}
+  - {t: '&m_ecirc', s: '&m_ecirc_cap'}
+  - {t: '&m_ediae', s: '&m_ediae_cap'}
+  - {t: '&m_ucirc', s: '&m_ucirc_cap'}
+  - {t: '&m_ugrav', s: '&m_ugrav_cap'}
+  - {t: '&m_icirc', s: '&m_icirc_cap'}
+  - {t: '&m_ocirc', s: '&m_ocirc_cap'}
+  - {t: '&m_oelig', s: '&m_oelig_cap'}
+  - {t: '&m_agrav', s: '&m_agrav_cap'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: '&m_idiae', s: '&m_idiae_cap'}
+  - ''
+  - {t: '&m_aelig', s: '&m_aelig_cap'}
+  - ''
+  - Alt+\
+  - Alt+Sft+\
+  - {t: '&m_ccedi', s: '&m_ccedi_cap'}
+  - ''
+  - ''
+  - ''
+  - Alt+M
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  SYMBOLS:
+  - ^
+  - <
+  - '>'
+  - $
+  - '%'
+  - '@'
+  - '&'
+  - '*'
+  - ''''
+  - '`'
+  - '{'
+  - (
+  - )
+  - '}'
+  - '='
+  - \
+  - +
+  - '-'
+  - /
+  - '"'
+  - '~'
+  - '['
+  - ']'
+  - _
+  - '#'
+  - ''
+  - '|'
+  - '!'
+  - ;
+  - ':'
+  - '?'
+  - INS
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  NAV-LIN:
+  - BT PRV
+  - BT NXT
+  - '&mmv MOVE_UP'
+  - Ctl+LEFT
+  - Ctl+RIGHT
+  - PG DN
+  - PG UP
+  - HOME
+  - END
+  - DEL
+  - ''
+  - LGUI
+  - LALT
+  - LCTRL
+  - ''
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - ''
+  - ''
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - ''
+  - ''
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - VOL UP
+  - VOL DN
+  - {type: held}
+  - ''
+  - MUTE
+  - '&mkp MCLK'
+  - '&mkp RCLK'
+  - '&mkp LCLK'
+  NAV-MAC:
+  - BT PRV
+  - BT NXT
+  - '&mmv MOVE_UP'
+  - Alt+LEFT
+  - Alt+RIGHT
+  - PG DN
+  - PG UP
+  - HOME
+  - END
+  - DEL
+  - ''
+  - LCTRL
+  - LALT
+  - LGUI
+  - ''
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - ''
+  - ''
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - ''
+  - ''
+  - Gui+Z
+  - Gui+X
+  - Gui+C
+  - Gui+V
+  - VOL UP
+  - VOL DN
+  - {type: held}
+  - ''
+  - MUTE
+  - '&mkp MCLK'
+  - '&mkp RCLK'
+  - '&mkp LCLK'
+  NUMPAD:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - /
+  - '7'
+  - '8'
+  - '9'
+  - '-'
+  - ''
+  - LGUI
+  - LALT
+  - LCTRL
+  - ''
+  - '*'
+  - '4'
+  - '5'
+  - '6'
+  - +
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ','
+  - '1'
+  - '2'
+  - '3'
+  - '='
+  - ''
+  - BSPC
+  - {type: held}
+  - DEL
+  - RET
+  - '0'
+  - .
+  FUNC-SYS:
+  - F11
+  - F12
+  - ''
+  - {t: ERGOL, h: toggle}
+  - {t: ERGOL-MAC, h: toggle}
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - OUT TOG
+  - '&bootloader'
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - CAPS
+  - ''
+  - ''
+  - {t: QWERTY, h: toggle}
+  - {t: QWERTY-MAC, h: toggle}
+  - '&studio_unlock'
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT CLR
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
