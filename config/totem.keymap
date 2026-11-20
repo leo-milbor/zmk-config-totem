@@ -4,10 +4,10 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#define ERGOL          0
-#define ERGOL_MAC      1
-#define QWERTY         2
-#define QWERTY_MAC     3
+#define QWERTY_MAC     0
+#define QWERTY         1
+#define ERGOL_MAC      2
+#define ERGOL          3
 #define ERGOL_ACC_LIN  4
 #define ERGOL_ACC_MAC  5
 #define QWERTY_ACC_LIN 6
@@ -72,107 +72,107 @@
         };
 
         /* Shift Mod-Morphs for French Accents (Linux Unicode) */
-        lu_eaigu: lu_eaigu { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&u_eaigu>, <&u_Eaigu>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        lu_egrav: lu_egrav { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&u_egrav>, <&u_Egrav>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        lu_ecirc: lu_ecirc { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&u_ecirc>, <&u_Ecirc>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        lu_ediae: lu_ediae { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&u_ediae>, <&u_Ediae>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        lu_agrav: lu_agrav { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&u_agrav>, <&u_Agrav>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        lu_acirc: lu_acirc { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&u_acirc>, <&u_Acirc>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        lu_ccedi: lu_ccedi { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&u_ccedi>, <&u_Ccedi>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        lu_ocirc: lu_ocirc { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&u_ocirc>, <&u_Ocirc>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        lu_oelig: lu_oelig { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&u_oelig>, <&u_Oelig>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        lu_aelig: lu_aelig { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&u_aelig>, <&u_Aelig>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        lu_ugrav: lu_ugrav { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&u_ugrav>, <&u_Ugrav>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        lu_ucirc: lu_ucirc { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&u_ucirc>, <&u_Ucirc>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        lu_icirc: lu_icirc { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&u_icirc>, <&u_Icirc>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        lu_idiae: lu_idiae { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&u_idiae>, <&u_Idiae>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lu_eaigu: lu_eaigu { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&u_eaigu>, <&u_eaigu_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lu_egrav: lu_egrav { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&u_egrav>, <&u_egrav_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lu_ecirc: lu_ecirc { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&u_ecirc>, <&u_ecirc_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lu_ediae: lu_ediae { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&u_ediae>, <&u_ediae_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lu_agrav: lu_agrav { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&u_agrav>, <&u_agrav_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lu_acirc: lu_acirc { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&u_acirc>, <&u_acirc_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lu_ccedi: lu_ccedi { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&u_ccedi>, <&u_ccedi_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lu_ocirc: lu_ocirc { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&u_ocirc>, <&u_ocirc_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lu_oelig: lu_oelig { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&u_oelig>, <&u_oelig_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lu_aelig: lu_aelig { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&u_aelig>, <&u_aelig_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lu_ugrav: lu_ugrav { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&u_ugrav>, <&u_ugrav_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lu_ucirc: lu_ucirc { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&u_ucirc>, <&u_ucirc_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lu_icirc: lu_icirc { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&u_icirc>, <&u_icirc_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lu_idiae: lu_idiae { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&u_idiae>, <&u_idiae_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
 
         /* Shift Mod-Morphs for French Accents (macOS Native Option Sequences) */
-        lm_eaigu: lm_eaigu { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_eaigu>, <&m_Eaigu>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        lm_egrav: lm_egrav { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_egrav>, <&m_Egrav>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        lm_ecirc: lm_ecirc { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_ecirc>, <&m_Ecirc>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        lm_ediae: lm_ediae { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_ediae>, <&m_Ediae>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        lm_agrav: lm_agrav { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_agrav>, <&m_Agrav>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        lm_acirc: lm_acirc { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_acirc>, <&m_Acirc>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        lm_ccedi: lm_ccedi { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_ccedi>, <&m_Ccedi>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        lm_ocirc: lm_ocirc { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_ocirc>, <&m_Ocirc>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        lm_oelig: lm_oelig { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_oelig>, <&m_Oelig>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        lm_aelig: lm_aelig { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_aelig>, <&m_Aelig>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        lm_ugrav: lm_ugrav { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_ugrav>, <&m_Ugrav>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        lm_ucirc: lm_ucirc { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_ucirc>, <&m_Ucirc>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        lm_icirc: lm_icirc { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_icirc>, <&m_Icirc>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        lm_idiae: lm_idiae { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_idiae>, <&m_Idiae>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lm_eaigu: lm_eaigu { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_eaigu>, <&m_eaigu_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lm_egrav: lm_egrav { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_egrav>, <&m_egrav_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lm_ecirc: lm_ecirc { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_ecirc>, <&m_ecirc_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lm_ediae: lm_ediae { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_ediae>, <&m_ediae_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lm_agrav: lm_agrav { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_agrav>, <&m_agrav_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lm_acirc: lm_acirc { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_acirc>, <&m_acirc_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lm_ccedi: lm_ccedi { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_ccedi>, <&m_ccedi_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lm_ocirc: lm_ocirc { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_ocirc>, <&m_ocirc_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lm_oelig: lm_oelig { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_oelig>, <&m_oelig_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lm_aelig: lm_aelig { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_aelig>, <&m_aelig_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lm_ugrav: lm_ugrav { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_ugrav>, <&m_ugrav_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lm_ucirc: lm_ucirc { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_ucirc>, <&m_ucirc_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lm_icirc: lm_icirc { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_icirc>, <&m_icirc_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        lm_idiae: lm_idiae { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&m_idiae>, <&m_idiae_cap>; mods = <(MOD_LSFT|MOD_RSFT)>; };
     };
 
     macros {
         /* Linux Unicode Macros (Ctrl+Shift+U + Hex + Enter) */
         u_eaigu: u_eaigu { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp E &kp N9 &kp RET>; };
-        u_Eaigu: u_Eaigu { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp C &kp N9 &kp RET>; };
+        u_eaigu_cap: u_eaigu_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp C &kp N9 &kp RET>; };
         u_egrav: u_egrav { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp E &kp N8 &kp RET>; };
-        u_Egrav: u_Egrav { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp C &kp N8 &kp RET>; };
+        u_egrav_cap: u_egrav_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp C &kp N8 &kp RET>; };
         u_ecirc: u_ecirc { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp E &kp A &kp RET>; };
-        u_Ecirc: u_Ecirc { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp C &kp A &kp RET>; };
+        u_ecirc_cap: u_ecirc_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp C &kp A &kp RET>; };
         u_ediae: u_ediae { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp E &kp B &kp RET>; };
-        u_Ediae: u_Ediae { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp C &kp B &kp RET>; };
+        u_ediae_cap: u_ediae_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp C &kp B &kp RET>; };
         u_agrav: u_agrav { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp E &kp N0 &kp RET>; };
-        u_Agrav: u_Agrav { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp C &kp N0 &kp RET>; };
+        u_agrav_cap: u_agrav_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp C &kp N0 &kp RET>; };
         u_acirc: u_acirc { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp E &kp N2 &kp RET>; };
-        u_Acirc: u_Acirc { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp C &kp N2 &kp RET>; };
+        u_acirc_cap: u_acirc_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp C &kp N2 &kp RET>; };
         u_ccedi: u_ccedi { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp E &kp N7 &kp RET>; };
-        u_Ccedi: u_Ccedi { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp C &kp N7 &kp RET>; };
+        u_ccedi_cap: u_ccedi_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp C &kp N7 &kp RET>; };
         u_ocirc: u_ocirc { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp F &kp N4 &kp RET>; };
-        u_Ocirc: u_Ocirc { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp D &kp N4 &kp RET>; };
+        u_ocirc_cap: u_ocirc_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp D &kp N4 &kp RET>; };
         u_oelig: u_oelig { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N5 &kp N3 &kp RET>; };
-        u_Oelig: u_Oelig { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N5 &kp N2 &kp RET>; };
+        u_oelig_cap: u_oelig_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N5 &kp N2 &kp RET>; };
         u_aelig: u_aelig { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp E &kp N6 &kp RET>; };
-        u_Aelig: u_Aelig { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp C &kp N6 &kp RET>; };
+        u_aelig_cap: u_aelig_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp C &kp N6 &kp RET>; };
         u_ugrav: u_ugrav { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp F &kp N9 &kp RET>; };
-        u_Ugrav: u_Ugrav { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp D &kp N9 &kp RET>; };
+        u_ugrav_cap: u_ugrav_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp D &kp N9 &kp RET>; };
         u_ucirc: u_ucirc { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp F &kp B &kp RET>; };
-        u_Ucirc: u_Ucirc { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp D &kp B &kp RET>; };
+        u_ucirc_cap: u_ucirc_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp D &kp B &kp RET>; };
         u_icirc: u_icirc { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp E &kp E &kp RET>; };
-        u_Icirc: u_Icirc { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp C &kp E &kp RET>; };
+        u_icirc_cap: u_icirc_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp C &kp E &kp RET>; };
         u_idiae: u_idiae { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp E &kp F &kp RET>; };
-        u_Idiae: u_Idiae { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp C &kp F &kp RET>; };
+        u_idiae_cap: u_idiae_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp C &kp F &kp RET>; };
         u_lguil: u_lguil { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp A &kp B &kp RET>; };
         u_rguil: u_rguil { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp B &kp B &kp RET>; };
         u_micro: u_micro { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LC(LS(U)) &kp N0 &kp N0 &kp B &kp N5 &kp RET>; };
 
         /* macOS Option Macros (Standard US Layout) */
         m_eaigu: m_eaigu { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(E) &kp E>; };
-        m_Eaigu: m_Eaigu { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(E) &kp LS(E)>; };
+        m_eaigu_cap: m_eaigu_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(E) &kp LS(E)>; };
         m_egrav: m_egrav { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(GRAVE) &kp E>; };
-        m_Egrav: m_Egrav { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(GRAVE) &kp LS(E)>; };
+        m_egrav_cap: m_egrav_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(GRAVE) &kp LS(E)>; };
         m_ecirc: m_ecirc { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(I) &kp E>; };
-        m_Ecirc: m_Ecirc { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(I) &kp LS(E)>; };
+        m_ecirc_cap: m_ecirc_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(I) &kp LS(E)>; };
         m_ediae: m_ediae { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(U) &kp E>; };
-        m_Ediae: m_Ediae { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(U) &kp LS(E)>; };
+        m_ediae_cap: m_ediae_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(U) &kp LS(E)>; };
         m_agrav: m_agrav { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(GRAVE) &kp A>; };
-        m_Agrav: m_Agrav { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(GRAVE) &kp LS(A)>; };
+        m_agrav_cap: m_agrav_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(GRAVE) &kp LS(A)>; };
         m_acirc: m_acirc { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(I) &kp A>; };
-        m_Acirc: m_Acirc { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(I) &kp LS(A)>; };
+        m_acirc_cap: m_acirc_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(I) &kp LS(A)>; };
         m_ccedi: m_ccedi { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(C)>; };
-        m_Ccedi: m_Ccedi { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(LS(C))>; };
+        m_ccedi_cap: m_ccedi_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(LS(C))>; };
         m_ocirc: m_ocirc { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(I) &kp O>; };
-        m_Ocirc: m_Ocirc { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(I) &kp LS(O)>; };
+        m_ocirc_cap: m_ocirc_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(I) &kp LS(O)>; };
         m_oelig: m_oelig { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(Q)>; };
-        m_Oelig: m_Oelig { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(LS(Q))>; };
+        m_oelig_cap: m_oelig_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(LS(Q))>; };
         m_aelig: m_aelig { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(SQT)>; };
-        m_Aelig: m_Aelig { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(LS(SQT))>; };
+        m_aelig_cap: m_aelig_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(LS(SQT))>; };
         m_ugrav: m_ugrav { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(GRAVE) &kp U>; };
-        m_Ugrav: m_Ugrav { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(GRAVE) &kp LS(U)>; };
+        m_ugrav_cap: m_ugrav_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(GRAVE) &kp LS(U)>; };
         m_ucirc: m_ucirc { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(I) &kp U>; };
-        m_Ucirc: m_Ucirc { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(I) &kp LS(U)>; };
+        m_ucirc_cap: m_ucirc_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(I) &kp LS(U)>; };
         m_icirc: m_icirc { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(I) &kp I>; };
-        m_Icirc: m_Icirc { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(I) &kp LS(I)>; };
+        m_icirc_cap: m_icirc_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(I) &kp LS(I)>; };
         m_idiae: m_idiae { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(U) &kp I>; };
-        m_Idiae: m_Idiae { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(U) &kp LS(I)>; };
+        m_idiae_cap: m_idiae_cap { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp LA(U) &kp LS(I)>; };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        /* Layer 0: QWERTY (macOS Mode) */
+        /* Layer 0: QWERTY (macOS Mode - Default on Boot) */
         qwerty_mac_layer {
             display-name = "QWERTY-MAC";
             bindings = <
@@ -194,18 +194,7 @@
             >;
         };
 
-        /* Layer 2: Ergo-L (Linux Mode) */
-        ergol_layer {
-            display-name = "ERGOL";
-            bindings = <
-                &kp Q          &kp C          &kp O          &kp P          &kp W               &kp J          &kp M          &kp D          &sl ERGOL_ACC_LIN &kp Y
-                &kp A          &hrm LGUI S    &hrm LALT E    &hrm LCTRL N   &kp F               &kp L          &hrm RCTRL R   &hrm LALT T    &hrm RGUI I    &kp U
-    &kp ESC     &kp Z          &kp X          &kp MINUS      &kp V          &kp B               &kp DOT        &kp H          &kp G          &kp COMMA      &kp K          &kp SQT
-                                              &kp DEL        &tlt NAV_LIN BSPC &tlt NUM SPACE   &td_sft        &tlt SYM RET   &td_tab
-            >;
-        };
-
-        /* Layer 3: Ergo-L (macOS Mode) */
+        /* Layer 2: Ergo-L (macOS Mode) */
         ergol_mac_layer {
             display-name = "ERGOL-MAC";
             bindings = <
@@ -216,29 +205,18 @@
             >;
         };
 
-        /* Layer 4: QWERTY French Accents (macOS) */
-        qwerty_acc_mac_layer {
-            display-name = "ACC-QW-MAC";
+        /* Layer 3: Ergo-L (Linux Mode) */
+        ergol_layer {
+            display-name = "ERGOL";
             bindings = <
-                &lm_acirc      &lm_egrav      &lm_eaigu      &lm_ecirc      &lm_ediae           &lm_ucirc      &lm_ugrav      &lm_icirc      &lm_ocirc      &lm_oelig
-                &lm_agrav      &none          &none          &none          &none               &none          &none          &lm_idiae      &none          &lm_aelig
-    &none       &kp LA(BSLH)   &kp LA(LS(BSLH)) &lm_ccedi    &none          &none               &none          &kp LA(M)      &none          &none          &none          &none
-                                              &none          &none          &none               &none          &none          &none
+                &kp Q          &kp C          &kp O          &kp P          &kp W               &kp J          &kp M          &kp D          &sl ERGOL_ACC_LIN &kp Y
+                &kp A          &hrm LGUI S    &hrm LALT E    &hrm LCTRL N   &kp F               &kp L          &hrm RCTRL R   &hrm LALT T    &hrm RGUI I    &kp U
+    &kp ESC     &kp Z          &kp X          &kp MINUS      &kp V          &kp B               &kp DOT        &kp H          &kp G          &kp COMMA      &kp K          &kp SQT
+                                              &kp DEL        &tlt NAV_LIN BSPC &tlt NUM SPACE   &td_sft        &tlt SYM RET   &td_tab
             >;
         };
 
-        /* Layer 5: QWERTY French Accents (Linux) */
-        qwerty_acc_lin_layer {
-            display-name = "ACC-QW-LIN";
-            bindings = <
-                &lu_acirc      &lu_egrav      &lu_eaigu      &lu_ecirc      &lu_ediae           &lu_ucirc      &lu_ugrav      &lu_icirc      &lu_ocirc      &lu_oelig
-                &lu_agrav      &none          &none          &none          &none               &none          &none          &lu_idiae      &none          &lu_aelig
-    &none       &u_lguil       &u_rguil       &lu_ccedi      &none          &none               &none          &u_micro       &none          &none          &none          &none
-                                              &none          &none          &none               &none          &none          &none
-            >;
-        };
-
-        /* Layer 6: Ergo-L French Accents (Linux) */
+        /* Layer 4: Ergo-L French Accents (Linux) */
         ergol_acc_lin_layer {
             display-name = "ACC-EL-LIN";
             bindings = <
@@ -249,13 +227,35 @@
             >;
         };
 
-        /* Layer 7: Ergo-L French Accents (macOS) */
+        /* Layer 5: Ergo-L French Accents (macOS) */
         ergol_acc_mac_layer {
             display-name = "ACC-EL-MAC";
             bindings = <
                 &lm_acirc      &lm_ccedi      &lm_oelig      &lm_ocirc      &none               &none          &none          &none          &none          &lm_ucirc
                 &lm_agrav      &lm_eaigu      &lm_egrav      &lm_ecirc      &none               &none          &none          &lm_icirc      &lm_idiae      &lm_ugrav
     &none       &none          &kp LA(BSLH)   &kp LA(LS(BSLH)) &none        &none               &none          &none          &kp LA(M)      &none          &none          &lm_aelig
+                                              &none          &none          &none               &none          &none          &none
+            >;
+        };
+
+        /* Layer 6: QWERTY French Accents (Linux) */
+        qwerty_acc_lin_layer {
+            display-name = "ACC-QW-LIN";
+            bindings = <
+                &lu_acirc      &lu_egrav      &lu_eaigu      &lu_ecirc      &lu_ediae           &lu_ucirc      &lu_ugrav      &lu_icirc      &lu_ocirc      &lu_oelig
+                &lu_agrav      &none          &none          &none          &none               &none          &none          &lu_idiae      &none          &lu_aelig
+    &none       &u_lguil       &u_rguil       &lu_ccedi      &none          &none               &none          &u_micro       &none          &none          &none          &none
+                                              &none          &none          &none               &none          &none          &none
+            >;
+        };
+
+        /* Layer 7: QWERTY French Accents (macOS) */
+        qwerty_acc_mac_layer {
+            display-name = "ACC-QW-MAC";
+            bindings = <
+                &lm_acirc      &lm_egrav      &lm_eaigu      &lm_ecirc      &lm_ediae           &lm_ucirc      &lm_ugrav      &lm_icirc      &lm_ocirc      &lm_oelig
+                &lm_agrav      &none          &none          &none          &none               &none          &none          &lm_idiae      &none          &lm_aelig
+    &none       &kp LA(BSLH)   &kp LA(LS(BSLH)) &lm_ccedi    &none          &none               &none          &kp LA(M)      &none          &none          &none          &none
                                               &none          &none          &none               &none          &none          &none
             >;
         };
