@@ -1,11 +1,9 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "totem-layouts.dtsi"
 
 / {
     chosen {
         zmk,kscan = &mock_kscan;
         zmk,matrix-transform = &default_transform;
-        zmk,physical-layout = &totem_physical_layout;
         zephyr,display = &oled;
     };
 
