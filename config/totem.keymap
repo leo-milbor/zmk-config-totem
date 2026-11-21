@@ -28,11 +28,9 @@
         hrm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <120>;
-            hold-while-undecided;
             bindings = <&kp>, <&kp>;
         };
 
