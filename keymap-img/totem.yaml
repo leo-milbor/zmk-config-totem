@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: totem}
 layers:
-  QWERTY-MAC:
+  QWR-MAC:
   - Q
   - W
   - E
@@ -32,13 +32,13 @@ layers:
   - ','
   - .
   - /
-  - {t: ACC-QW-MAC, h: sticky}
+  - {t: ACC-QM, h: sticky}
   - {t: BSPC, h: NAV-MAC}
   - {t: SPACE, h: NUMPAD}
-  - DEL
+  - {t: DEL, h: FN-SYS}
   - '&td_sft'
   - {t: RET, h: SYMBOLS}
-  - '&td_tab'
+  - {t: TAB, h: MSE-MAC}
   QWERTY:
   - Q
   - W
@@ -71,14 +71,14 @@ layers:
   - ','
   - .
   - /
-  - {t: ACC-QW-LIN, h: sticky}
+  - {t: ACC-QW, h: sticky}
   - {t: BSPC, h: NAV-LIN}
   - {t: SPACE, h: NUMPAD}
-  - DEL
+  - {t: DEL, h: FN-SYS}
   - '&td_sft'
   - {t: RET, h: SYMBOLS}
-  - '&td_tab'
-  ERGOL-MAC:
+  - {t: TAB, h: MSE-LIN}
+  EGL-MAC:
   - Q
   - C
   - O
@@ -87,7 +87,7 @@ layers:
   - J
   - M
   - D
-  - {t: ACC-EL-MAC, h: sticky}
+  - {t: ACC-EM, h: sticky}
   - Y
   - A
   - {t: S, h: LCTRL}
@@ -113,10 +113,10 @@ layers:
   - ''''
   - {t: BSPC, h: NAV-MAC}
   - {t: SPACE, h: NUMPAD}
-  - DEL
+  - {t: DEL, h: FN-SYS}
   - '&td_sft'
   - {t: RET, h: SYMBOLS}
-  - '&td_tab'
+  - {t: TAB, h: MSE-MAC}
   ERGOL:
   - Q
   - C
@@ -126,7 +126,7 @@ layers:
   - J
   - M
   - D
-  - {t: ACC-EL-LIN, h: sticky}
+  - {t: ACC-EL, h: sticky}
   - Y
   - A
   - {t: S, h: LGUI}
@@ -152,11 +152,11 @@ layers:
   - ''''
   - {t: BSPC, h: NAV-LIN}
   - {t: SPACE, h: NUMPAD}
-  - DEL
+  - {t: DEL, h: FN-SYS}
   - '&td_sft'
   - {t: RET, h: SYMBOLS}
-  - '&td_tab'
-  ACC-EL-LIN:
+  - {t: TAB, h: MSE-LIN}
+  ACC-EL:
   - {t: '&u_acirc', s: '&u_acirc_cap'}
   - {t: '&u_ccedi', s: '&u_ccedi_cap'}
   - {t: '&u_oelig', s: '&u_oelig_cap'}
@@ -195,7 +195,7 @@ layers:
   - ''
   - ''
   - ''
-  ACC-EL-MAC:
+  ACC-EM:
   - {t: '&m_acirc', s: '&m_acirc_cap'}
   - {t: '&m_ccedi', s: '&m_ccedi_cap'}
   - {t: '&m_oelig', s: '&m_oelig_cap'}
@@ -234,7 +234,7 @@ layers:
   - ''
   - ''
   - ''
-  ACC-QW-LIN:
+  ACC-QW:
   - {t: '&u_acirc', s: '&u_acirc_cap'}
   - {t: '&u_egrav', s: '&u_egrav_cap'}
   - {t: '&u_eaigu', s: '&u_eaigu_cap'}
@@ -273,7 +273,7 @@ layers:
   - ''
   - ''
   - ''
-  ACC-QW-MAC:
+  ACC-QM:
   - {t: '&m_acirc', s: '&m_acirc_cap'}
   - {t: '&m_egrav', s: '&m_egrav_cap'}
   - {t: '&m_eaigu', s: '&m_eaigu_cap'}
@@ -333,12 +333,12 @@ layers:
   - '-'
   - /
   - '"'
-  - ''
   - '~'
   - '['
   - ']'
   - _
   - '#'
+  - ''
   - '|'
   - '!'
   - ;
@@ -352,83 +352,83 @@ layers:
   - {type: held}
   - ''
   NAV-LIN:
-  - BT PRV
-  - BT NXT
-  - '&mmv MOVE_UP'
+  - ''
+  - ''
   - Ctl+LEFT
   - Ctl+RIGHT
-  - PG DN
-  - PG UP
+  - ''
   - HOME
+  - PG UP
+  - PG DN
   - END
   - DEL
   - ''
   - LGUI
   - LALT
   - LCTRL
-  - ''
+  - LSHFT
   - LEFT
   - DOWN
   - UP
   - RIGHT
   - ''
   - ''
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - Ctl+Z
   - Ctl+X
   - Ctl+C
   - Ctl+V
-  - VOL UP
-  - VOL DN
+  - ''
+  - ''
   - {type: held}
   - ''
-  - MUTE
-  - '&mkp MCLK'
-  - '&mkp RCLK'
+  - ''
   - '&mkp LCLK'
+  - '&mkp RCLK'
+  - '&mkp MCLK'
   NAV-MAC:
-  - BT PRV
-  - BT NXT
-  - '&mmv MOVE_UP'
+  - ''
+  - ''
   - Alt+LEFT
   - Alt+RIGHT
-  - PG DN
-  - PG UP
+  - ''
   - HOME
+  - PG UP
+  - PG DN
   - END
   - DEL
   - ''
   - LCTRL
   - LALT
   - LGUI
-  - ''
+  - LSHFT
   - LEFT
   - DOWN
   - UP
   - RIGHT
   - ''
   - ''
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - Gui+Z
   - Gui+X
   - Gui+C
   - Gui+V
-  - VOL UP
-  - VOL DN
+  - ''
+  - ''
   - {type: held}
   - ''
-  - MUTE
-  - '&mkp MCLK'
-  - '&mkp RCLK'
+  - ''
   - '&mkp LCLK'
+  - '&mkp RCLK'
+  - '&mkp MCLK'
   NUMPAD:
   - ''
   - ''
@@ -468,42 +468,120 @@ layers:
   - RET
   - '0'
   - .
-  FUNC-SYS:
-  - F11
-  - F12
+  MSE-LIN:
   - ''
-  - {t: ERGOL, h: toggle}
-  - {t: ERGOL-MAC, h: toggle}
+  - '&msc SCRL_UP'
+  - '&mmv MOVE_UP'
+  - '&msc SCRL_DOWN'
+  - ''
+  - ''
+  - BRI DN
+  - BRI UP
+  - ''
+  - DEL
+  - ''
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - ''
+  - LSHFT
+  - RCTRL
+  - LALT
+  - RGUI
+  - ''
+  - ''
+  - ''
+  - ''
+  - Alt+LEFT
+  - Alt+RIGHT
+  - ''
+  - VOL DN
+  - MUTE
+  - PP
+  - VOL UP
+  - ''
+  - ''
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+  - '&mkp MCLK'
+  - ''
+  - ''
+  - {type: held}
+  MSE-MAC:
+  - ''
+  - '&msc SCRL_UP'
+  - '&mmv MOVE_UP'
+  - '&msc SCRL_DOWN'
+  - ''
+  - ''
+  - BRI DN
+  - BRI UP
+  - ''
+  - DEL
+  - ''
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - ''
+  - LSHFT
+  - RGUI
+  - LALT
+  - RCTRL
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+[
+  - Gui+]
+  - ''
+  - VOL DN
+  - MUTE
+  - PP
+  - VOL UP
+  - ''
+  - ''
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+  - '&mkp MCLK'
+  - ''
+  - ''
+  - {type: held}
+  FN-SYS:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
-  - OUT TOG
-  - '&bootloader'
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
+  - {t: ERGOL, h: toggle}
+  - {t: EGL-MAC, h: toggle}
+  - ''
   - F7
   - F8
   - F9
-  - F10
-  - CAPS
   - ''
+  - ''
+  - LCTRL
+  - LALT
+  - LGUI
+  - ''
+  - ''
+  - F4
+  - F5
+  - F6
+  - ''
+  - CAPS
+  - BT CLR
+  - OUT TOG
   - ''
   - {t: QWERTY, h: toggle}
-  - {t: QWERTY-MAC, h: toggle}
-  - '&studio_unlock'
+  - {t: QWR-MAC, h: toggle}
+  - ''
+  - F1
+  - F2
+  - F3
+  - ''
+  - '&bootloader'
   - ''
   - ''
-  - ''
-  - ''
-  - BT CLR
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {type: held}
+  - F10
+  - F11
+  - F12
