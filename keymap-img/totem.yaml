@@ -387,9 +387,9 @@ layers:
   - {type: held}
   - ''
   - ''
-  - '&mkp LCLK'
-  - '&mkp RCLK'
-  - '&mkp MCLK'
+  - ''
+  - ''
+  - ''
   NAV-MAC:
   - ''
   - ''
@@ -426,9 +426,9 @@ layers:
   - {type: held}
   - ''
   - ''
-  - '&mkp LCLK'
-  - '&mkp RCLK'
-  - '&mkp MCLK'
+  - ''
+  - ''
+  - ''
   NUMPAD:
   - ''
   - ''
@@ -462,9 +462,9 @@ layers:
   - '3'
   - '='
   - ''
-  - BSPC
+  - ''
   - {type: held}
-  - DEL
+  - ''
   - RET
   - '0'
   - .
@@ -478,7 +478,7 @@ layers:
   - BRI DN
   - BRI UP
   - ''
-  - DEL
+  - ''
   - ''
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
@@ -517,7 +517,7 @@ layers:
   - BRI DN
   - BRI UP
   - ''
-  - DEL
+  - ''
   - ''
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
